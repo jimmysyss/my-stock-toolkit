@@ -38,7 +38,7 @@ def init_db():
 
         if existing_stock is None :
             # NEW
-            stock = Stock(reuter=reuter_code, bloomberg=bloomberg_code, isin=isin, fullname=fullname)
+            stock = Stock(exchange=stock_code, reuter=reuter_code, bloomberg=bloomberg_code, isin=isin, fullname=fullname)
             session.add(stock)
             new_stock += 1
         else:
