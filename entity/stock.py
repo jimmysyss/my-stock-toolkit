@@ -12,5 +12,7 @@ class Stock(Base):
     bloomberg = Column(String)
     isin = Column(String)
     fullname = Column(String)
+    market_cap_ccy = Column(String)
     market_cap = Column(Integer)
     issue_share = Column(Integer)
+    website = Column(String)
