@@ -9,7 +9,7 @@ from openpyxl import load_workbook
 
 def init_db():
     engine = create_engine('sqlite:///./stock.db', convert_unicode=True)
-    Base.metadata.create_all(engine)
+    #Base.metadata.create_all(engine)
 
     wb = load_workbook(filename="data/isino.xlsx")
     ws = wb['ISIN']
